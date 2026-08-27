@@ -20,12 +20,12 @@ const copyContainer = {
 };
 
 const copyItem = {
-  hidden: { opacity: 0, y: 18, filter: "blur(10px)" },
+  hidden: { opacity: 1, y: 18, filter: "blur(100px)" },
   visible: {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
-    transition: { duration: 0.7, ease: easeOutExpo },
+    transition: { duration: 0.5, ease: easeOutExpo },
   },
 };
 
@@ -93,8 +93,7 @@ export function Hero({ content, replayLabel }: Props) {
             </motion.div>
             <motion.div variants={copyItem}>
               <h1 className="mt-6 mb-0 font-display text-4xl leading-[1.05] font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
-                {content.title}{" "}
-                <span className="text-led-light">{content.titleAccent}</span>
+                {content.title} <span>{content.titleAccent}</span>
               </h1>
             </motion.div>
             <div ref={seamRef} className="my-5 h-0 sm:my-6" aria-hidden />

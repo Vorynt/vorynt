@@ -84,6 +84,32 @@ body {
     inset 0 1px 0 oklch(0.95 0.03 240 / 0.16);
 }
 
+@keyframes liquid-glass-sheen {
+  0%,
+  100% {
+    background-position:
+      0% 50%,
+      0 0;
+  }
+  50% {
+    background-position:
+      100% 50%,
+      0 0;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .text-liquid-glass {
+    color: var(--led-light);
+    -webkit-text-fill-color: var(--led-light);
+    background-color: transparent;
+    background-image: none;
+    mix-blend-mode: normal;
+    text-shadow: none;
+    animation: none;
+  }
+}
+
 .glass-hover {
   transition:
     transform 250ms cubic-bezier(0.16, 1, 0.3, 1),
@@ -212,7 +238,8 @@ body {
   .flare-breathe,
   .marquee-track,
   .marquee-track-reverse,
-  .shimmer-mask:hover::after {
+  .shimmer-mask:hover::after,
+  .text-liquid-glass {
     animation: none;
   }
 

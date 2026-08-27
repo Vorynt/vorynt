@@ -41,7 +41,7 @@ export function LedHorizon({ replayKey = 0, offsetY = 0 }: Props) {
           className="h-full w-full"
           initial={{
             background:
-              "conic-gradient(from 270deg, var(--color-accent) 0%, var(--color-led) 5%, black 5%)",
+              "conic-gradient(from 270deg, var(--color-accent) 0%, var(--color-led) 0%, black 0%)",
           }}
           animate={{
             background: [
