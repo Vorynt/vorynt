@@ -33,8 +33,7 @@ export function Process({ content }: Props) {
             return (
               <li
                 key={step.number}
-                className={cn("relative", showPhase && index > 0 && "mt-10")}
-              >
+                className={cn("relative", showPhase && index > 0 && "mt-10")}>
                 {showPhase ? (
                   <p className="mb-2 pl-10 font-display text-[0.65rem] tracking-[0.28em] text-led-light uppercase sm:pl-14">
                     {step.phase}
@@ -49,8 +48,7 @@ export function Process({ content }: Props) {
                     <div className="grid gap-3 py-5 sm:grid-cols-[7.5rem_1fr] sm:items-start sm:gap-8">
                       <p
                         aria-hidden
-                        className="font-display text-5xl leading-none font-semibold tracking-tight text-led-light/25 sm:text-6xl"
-                      >
+                        className="font-display text-5xl leading-none font-semibold tracking-tight text-led-light/25 sm:text-6xl">
                         {step.number}
                       </p>
                       <div>

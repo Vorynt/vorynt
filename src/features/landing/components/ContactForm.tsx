@@ -1,18 +1,18 @@
 "use client";
 
-import { track } from "@vercel/analytics";
-import { useState, type FormEvent } from "react";
 import type { SiteContent } from "@/content/schema";
 import { Button } from "@/shared/components/Button";
 import { Container } from "@/shared/components/Container";
 import { LedFrame } from "@/shared/components/LedFrame";
 import { SectionHeading } from "@/shared/components/SectionHeading";
-import { FadeIn } from "@/shared/motion/FadeIn";
 import {
   contactPayloadSchema,
   type ContactPayload,
 } from "@/shared/contact-payload";
+import { FadeIn } from "@/shared/motion/FadeIn";
 import { cn } from "@/shared/utils/cn";
+import { track } from "@vercel/analytics";
+import { useState, type FormEvent } from "react";
 
 interface Props {
   content: SiteContent["contact"];
@@ -22,9 +22,9 @@ interface Props {
 type FieldErrors = Partial<Record<"name" | "email" | "message", string>>;
 
 export function ContactForm({ content, locale }: Props) {
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">(
-    "idle",
-  );
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "success" | "error"
+  >("idle");
   const [errors, setErrors] = useState<FieldErrors>({});
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -120,8 +120,8 @@ export function ContactForm({ content, locale }: Props) {
                 disabled={disabled}
                 autoComplete="organization"
               />
-              <fieldset className="flex flex-col gap-3" disabled={disabled}>
-                <legend className="text-sm text-foreground">
+              <fieldset className="flex flex-col" disabled={disabled}>
+                <legend className="text-sm text-foreground mb-2">
                   {content.fields.projectType.label}
                 </legend>
                 <div className="flex flex-wrap gap-2">
@@ -133,8 +133,7 @@ export function ContactForm({ content, locale }: Props) {
                         "hover:border-white/30 hover:text-foreground",
                         "has-checked:border-led-light/70 has-checked:bg-white/10 has-checked:text-foreground",
                         "has-disabled:cursor-not-allowed has-disabled:opacity-50",
-                      )}
-                    >
+                      )}>
                       <input
                         type="radio"
                         name="projectType"
@@ -159,7 +158,9 @@ export function ContactForm({ content, locale }: Props) {
                   placeholder={content.fields.message.placeholder}
                   className={cn(fieldClass, "h-auto min-h-32 resize-y py-3")}
                   aria-invalid={errors.message ? true : undefined}
-                  aria-describedby={errors.message ? "message-error" : undefined}
+                  aria-describedby={
+                    errors.message ? "message-error" : undefined
+                  }
                 />
                 {errors.message ? (
                   <p id="message-error" className="text-sm text-danger">
@@ -170,8 +171,7 @@ export function ContactForm({ content, locale }: Props) {
 
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute h-0 w-0 overflow-hidden opacity-0"
-              >
+                className="pointer-events-none absolute h-0 w-0 overflow-hidden opacity-0">
                 <input
                   name="website"
                   type="text"

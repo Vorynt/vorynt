@@ -20,15 +20,15 @@ export function LedHorizon({ replayKey = 0, offsetY = 0 }: Props) {
           className="h-full w-full"
           initial={{
             background:
-              "conic-gradient(from 90deg, black 100%, var(--color-blue-500) 95%, var(--color-blue-400) 100%)",
+              "conic-gradient(from 90deg, black 100%, var(--color-led) 95%, var(--color-accent) 100%)",
           }}
           animate={{
             background: [
-              "conic-gradient(from 90deg, black 100%, var(--color-blue-500) 95%, var(--color-blue-500) 95%, var(--color-blue-400) 100%)",
-              "conic-gradient(from 90deg, black 75%, var(--color-blue-500) 95%, var(--color-blue-500) 95%, var(--color-blue-400) 100%)",
-              "conic-gradient(from 90deg, black 50%, var(--color-blue-500) 95%, var(--color-blue-500) 95%, var(--color-blue-400) 100%)",
-              "conic-gradient(from 90deg, black 25%, var(--color-blue-500) 95%, var(--color-blue-500) 95%, var(--color-blue-400) 100%)",
-              "conic-gradient(from 90deg, black 0%, var(--color-blue-500) 95%, var(--color-blue-500) 95%, var(--color-blue-400) 100%)",
+              "conic-gradient(from 90deg, black 100%, var(--color-led) 95%, var(--color-accent) 100%)",
+              "conic-gradient(from 90deg, black 75%, var(--color-led) 95%, var(--color-accent) 100%)",
+              "conic-gradient(from 90deg, black 50%, var(--color-led) 95%, var(--color-accent) 100%)",
+              "conic-gradient(from 90deg, black 25%, var(--color-led) 95%, var(--color-accent) 100%)",
+              "conic-gradient(from 90deg, black 0%, var(--color-led) 95%, var(--color-accent) 100%)",
             ],
           }}
           transition={{
@@ -41,15 +41,15 @@ export function LedHorizon({ replayKey = 0, offsetY = 0 }: Props) {
           className="h-full w-full"
           initial={{
             background:
-              "conic-gradient(from 270deg, var(--color-blue-400) 0%, var(--color-blue-500) 5%, black 5%)",
+              "conic-gradient(from 270deg, var(--color-accent) 0%, var(--color-led) 5%, black 5%)",
           }}
           animate={{
             background: [
-              "conic-gradient(from 270deg, var(--color-blue-400) 0%, var(--color-blue-500) 5%, black 0%)",
-              "conic-gradient(from 270deg, var(--color-blue-400) 0%, var(--color-blue-500) 5%, black 25%)",
-              "conic-gradient(from 270deg, var(--color-blue-400) 0%, var(--color-blue-500) 5%, black 50%)",
-              "conic-gradient(from 270deg, var(--color-blue-400) 0%, var(--color-blue-500) 5%, black 75%)",
-              "conic-gradient(from 270deg, var(--color-blue-400) 0%, var(--color-blue-500) 5%, black 100%)",
+              "conic-gradient(from 270deg, var(--color-accent) 0%, var(--color-led) 5%, black 0%)",
+              "conic-gradient(from 270deg, var(--color-accent) 0%, var(--color-led) 5%, black 25%)",
+              "conic-gradient(from 270deg, var(--color-accent) 0%, var(--color-led) 5%, black 50%)",
+              "conic-gradient(from 270deg, var(--color-accent) 0%, var(--color-led) 5%, black 75%)",
+              "conic-gradient(from 270deg, var(--color-accent) 0%, var(--color-led) 5%, black 100%)",
             ],
           }}
           transition={{
