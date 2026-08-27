@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+:root {
+  --background: oklch(0.12 0.03 250);
+  --foreground: oklch(0.97 0.012 250);
+  --muted: oklch(0.76 0.03 250);
+  --surface: oklch(0.55 0.06 250 / 0.12);
+  --surface-raised: oklch(0.6 0.06 250 / 0.16);
+  --border: oklch(0.8 0.06 250 / 0.18);
+  --led: oklch(0.68 0.16 250);
+  --led-dim: oklch(0.55 0.14 250);
+  --led-soft: oklch(0.72 0.14 250 / 0.4);
+  --led-light: oklch(0.92 0.045 240);
+  --accent: oklch(0.68 0.16 250);
+  --accent-fg: oklch(0.98 0.01 250);
+  --danger: oklch(0.72 0.18 25);
+  --success: oklch(0.8 0.12 165);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-border: var(--border);
+  --color-led: var(--led);
+  --color-led-dim: var(--led-dim);
+  --color-led-soft: var(--led-soft);
+  --color-led-light: var(--led-light);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: oklch(0.72 0.14 250 / 0.4);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--led-light);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 70;
+  transform: translateY(-180%);
+  border-radius: 999px;
+  background: var(--led);
+  color: var(--accent-fg);
+  padding: 0.5rem 0.9rem;
+  font-size: 0.875rem;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.glass {
+  background: oklch(0.28 0.05 250 / 0.38);
+  backdrop-filter: blur(22px) saturate(150%);
+  border: 1px solid oklch(0.85 0.06 250 / 0.2);
+  box-shadow:
+    0 8px 40px oklch(0.2 0.06 250 / 0.35),
+    inset 0 1px 0 oklch(0.95 0.03 240 / 0.16);
+}
+
+.glass-hover {
+  transition:
+    transform 250ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 250ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (hover: hover) {
+  .glass-hover:hover {
+    transform: translateY(-3px);
+    border-color: oklch(0.92 0.05 240 / 0.45);
+    box-shadow:
+      0 16px 50px oklch(0.4 0.12 250 / 0.28),
+      0 0 32px oklch(0.72 0.14 250 / 0.16),
+      inset 0 1px 0 oklch(0.95 0.04 240 / 0.28);
+  }
+}
+
+@keyframes led-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(-100% / var(--marquee-sets, 2)), 0, 0);
+  }
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes arc-flow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -240;
+  }
+}
+
+@keyframes flare-breathe {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+.led-pulse {
+  animation: led-pulse 3.2s ease-in-out infinite;
+}
+
+.marquee-track {
+  animation: marquee 42s linear infinite;
+}
+
+.marquee-track-reverse {
+  animation: marquee 48s linear infinite reverse;
+}
+
+.shimmer-mask {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-mask::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    oklch(0.95 0.04 240 / 0.28) 50%,
+    transparent 65%
+  );
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .shimmer-mask:hover::after {
+    animation: shimmer-sweep 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .relative:hover .marquee-track,
+  .relative:hover .marquee-track-reverse {
+    animation-play-state: paused;
+  }
+}
+
+.arc-flow {
+  stroke-dasharray: 8 18;
+  animation: arc-flow 18s linear infinite;
+}
+
+.flare-breathe {
+  animation: flare-breathe 4.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .led-pulse,
+  .arc-flow,
+  .flare-breathe,
+  .marquee-track,
+  .marquee-track-reverse,
+  .shimmer-mask:hover::after {
+    animation: none;
+  }
+
+  .led-pulse {
+    opacity: 0.85;
+  }
+
+  .flare-breathe {
+    opacity: 0.7;
+    transform: translate(-50%, -50%);
+  }
+
+  .glass-hover:hover {
+    transform: none;
+  }
+}

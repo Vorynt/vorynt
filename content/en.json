@@ -1,0 +1,353 @@
+{
+  "chrome": {
+    "closeMenu": "Close menu",
+    "localeEn": "EN",
+    "localePt": "PT",
+    "localeSwitchAria": "Select language",
+    "mainNavAria": "Primary",
+    "openMenu": "Open menu",
+    "replayHeroAnimation": "Replay animation",
+    "skipToContent": "Skip to content"
+  },
+  "contact": {
+    "description": "A new system, a replacement for what you have, or evolution of what already runs. A name, context, and what needs to exist — we design the rest together.",
+    "error": "Could not send. Try again in a moment or write to us directly.",
+    "errors": {
+      "email": "Use a valid email. Example: you@company.com",
+      "message": "Add a bit more detail about the project.",
+      "name": "Please use at least two characters."
+    },
+    "eyebrow": "Next step",
+    "fields": {
+      "company": {
+        "label": "Company",
+        "placeholder": "Optional"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@company.com"
+      },
+      "message": {
+        "label": "What needs to exist",
+        "placeholder": "Context, timeline, and what you have already tried."
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "What should we call you"
+      },
+      "projectType": {
+        "label": "Project type",
+        "options": [
+          {
+            "label": "New system",
+            "value": "new"
+          },
+          {
+            "label": "Replace the current one",
+            "value": "replace"
+          },
+          {
+            "label": "Evolve what already exists",
+            "value": "evolve"
+          }
+        ]
+      }
+    },
+    "honeypotAria": "Leave this field empty",
+    "id": "contato",
+    "submit": "Start the conversation",
+    "submitting": "Sending…",
+    "success": "Received. We will come back with the next step.",
+    "title": "Tell us the problem. We will answer with a",
+    "titleAccent": "path."
+  },
+  "footer": {
+    "copyright": "© {year} Vorynt. All rights reserved.",
+    "nav": [
+      {
+        "href": "#ofertas",
+        "label": "Services"
+      },
+      {
+        "href": "#processo",
+        "label": "Process"
+      },
+      {
+        "href": "#contato",
+        "label": "Contact"
+      }
+    ],
+    "tagline": "Custom software. From requirement to production."
+  },
+  "header": {
+    "cta": {
+      "href": "#contato",
+      "label": "Talk to Vorynt"
+    },
+    "logo": "Vorynt",
+    "nav": [
+      {
+        "href": "#ofertas",
+        "label": "Services"
+      },
+      {
+        "href": "#processo",
+        "label": "Process"
+      },
+      {
+        "href": "#tecnologias",
+        "label": "Technologies"
+      },
+      {
+        "href": "#historia",
+        "label": "Story"
+      }
+    ]
+  },
+  "hero": {
+    "description": "Vorynt designs, builds, and ships software made for you — from requirements gathering to production. No shelf product, no shortcuts: an engineering bar on every delivery.",
+    "eyebrow": "Custom software engineering",
+    "primaryCta": {
+      "href": "#contato",
+      "label": "Start a project"
+    },
+    "secondaryCta": {
+      "href": "#processo",
+      "label": "See the process"
+    },
+    "title": "Systems built for your",
+    "titleAccent": "business."
+  },
+  "jsonLd": {
+    "description": "An engineering studio that designs, builds, and ships custom systems — from the first requirement to production, with quality at every step."
+  },
+  "offerings": {
+    "description": "No shelf product. Every delivery is born from your context — and ships to production with tests, operations, and someone accountable.",
+    "eyebrow": "What you hire",
+    "id": "ofertas",
+    "items": [
+      {
+        "description": "Web, APIs, integrations, and launch, end to end. The system follows your rules, your flows, and your constraints.",
+        "id": "custom",
+        "kicker": "Custom",
+        "points": [
+          "Requirements with acceptance criteria, no ambiguity at go-live",
+          "Architecture and interfaces aligned with how the team actually works",
+          "Integrations with what you already use — what works, stays"
+        ],
+        "title": "Born from your rules, not from a template"
+      },
+      {
+        "description": "Review, tests, and observability sit in the development rhythm. The goal is not a prototype: it is a stable, usable system ready to evolve.",
+        "id": "quality",
+        "kicker": "Standard",
+        "points": [
+          "Reviewed code and stable environments from the first increment",
+          "QA, accessibility, and hardening before go-live",
+          "Launch with a pipeline, rollback, and documented handover"
+        ],
+        "title": "Quality in the rhythm of the code, not at the end"
+      }
+    ],
+    "title": "Made to measure. With a",
+    "titleAccent": "production bar."
+  },
+  "process": {
+    "deliverableLabel": "Deliverable",
+    "description": "You watch the software grow: artifacts, previews, and written decisions. A status report without evidence does not count.",
+    "eyebrow": "How we work",
+    "id": "processo",
+    "steps": [
+      {
+        "deliverable": "Context map and validated hypotheses",
+        "description": "The business problem, constraints, dates, and what success actually means. Hard questions come early, while changing course is still cheap.",
+        "number": "01",
+        "phase": "Discover",
+        "title": "Briefing and alignment"
+      },
+      {
+        "deliverable": "Prioritized backlog with acceptance criteria",
+        "description": "Flows, rules, exceptions, and what stays out. Explicit priority: what ships in the first go-live and what waits for the next cycle.",
+        "number": "02",
+        "phase": "Discover",
+        "title": "Requirements"
+      },
+      {
+        "deliverable": "Technical design and ADRs for key choices",
+        "description": "System boundaries, data, integrations, security, and operations. Decisions written down — for the team and for whoever inherits the system in two years.",
+        "number": "03",
+        "phase": "Design",
+        "title": "Architecture"
+      },
+      {
+        "deliverable": "Flows and UI ready to implement",
+        "description": "Interface in service of the work. We prototype where usability risk is high; we implement directly where the domain is already clear.",
+        "number": "04",
+        "phase": "Design",
+        "title": "Experience design"
+      },
+      {
+        "deliverable": "Continuous builds in preview environments",
+        "description": "Visible increments, reviewed code, stable environments. Progress is software running in preview — not a percentage on a chart.",
+        "number": "05",
+        "phase": "Build",
+        "title": "Development"
+      },
+      {
+        "deliverable": "Executed test plan and open risks",
+        "description": "Tests, accessibility, performance, and attack surface. Finding a defect here costs less than finding it while the client is using the system.",
+        "number": "06",
+        "phase": "Build",
+        "title": "QA and hardening"
+      },
+      {
+        "deliverable": "Production live, with a runbook",
+        "description": "Pipeline, observability, rollback, and a go-live checklist. The system ships with an owner, a runbook, and a clear path if something fails.",
+        "number": "07",
+        "phase": "Ship",
+        "title": "Launch"
+      },
+      {
+        "deliverable": "Evolution backlog and support agreement",
+        "description": "Metrics, conscious technical debt, and the next cycle. Software that stops being touched starts aging the day after launch.",
+        "number": "08",
+        "phase": "Ship",
+        "title": "Evolution"
+      }
+    ],
+    "title": "Eight stages. Each with a clear",
+    "titleAccent": "exit."
+  },
+  "seo": {
+    "description": "An engineering studio that designs, builds, and ships systems made for your business — from the first requirement to a quality-led go-live.",
+    "keywords": [
+      "custom software",
+      "software engineering",
+      "bespoke systems",
+      "software quality",
+      "product engineering",
+      "Vorynt"
+    ],
+    "ogDescription": "Systems built for your context. From the first requirement to production, with technical rigor at every step.",
+    "ogTitle": "Vorynt — custom software with an engineering bar",
+    "siteName": "Vorynt",
+    "title": "Vorynt — custom software, from requirements to production"
+  },
+  "story": {
+    "eyebrow": "Origin",
+    "id": "historia",
+    "paragraphs": [
+      "Vorynt came from an engineer who loves technology — and, more than that, loves using it to untangle real problems. Not the tidy problem on a slide. The messy process, the integration that fails at midnight, the system nobody wants to inherit.",
+      "There was a clear opportunity: companies that needed serious systems, built for their own context, and little patience for transformation theater. The answer was a small studio with end-to-end ownership.",
+      "The standard is simple to say and hard to keep: every system is exclusive, and quality is not an extra at the end. It is how we build."
+    ],
+    "quote": {
+      "attribution": "Founder, Vorynt",
+      "text": "Software only earns the investment when it ships — and stays up."
+    },
+    "title": "It started with an engineer who treats software as a",
+    "titleAccent": "craft."
+  },
+  "technologies": {
+    "description": "We pick what lowers risk for your domain — and what we know how to operate for real. Technologies in service of the system, not the other way around.",
+    "eyebrow": "Technologies",
+    "id": "tecnologias",
+    "title": "Tools that already hold up in",
+    "titleAccent": "production.",
+    "tracks": [
+      {
+        "direction": "ltr",
+        "items": [
+          {
+            "icon": "typescript",
+            "name": "TypeScript"
+          },
+          {
+            "icon": "react",
+            "name": "React"
+          },
+          {
+            "icon": "nextjs",
+            "name": "Next.js"
+          },
+          {
+            "icon": "tailwindcss",
+            "name": "Tailwind CSS"
+          },
+          {
+            "icon": "react",
+            "name": "React Native"
+          },
+          {
+            "icon": "playwright",
+            "name": "Playwright"
+          }
+        ],
+        "label": "Product and interface"
+      },
+      {
+        "direction": "rtl",
+        "items": [
+          {
+            "icon": "nodejs",
+            "name": "Node.js"
+          },
+          {
+            "icon": "nestjs",
+            "name": "NestJS"
+          },
+          {
+            "icon": "python",
+            "name": "Python"
+          },
+          {
+            "icon": "postgresql",
+            "name": "PostgreSQL"
+          },
+          {
+            "icon": "redis",
+            "name": "Redis"
+          },
+          {
+            "icon": "graphql",
+            "name": "GraphQL",
+            "variant": "plain"
+          }
+        ],
+        "label": "Backend and data"
+      },
+      {
+        "direction": "ltr",
+        "items": [
+          {
+            "icon": "amazonwebservices",
+            "name": "AWS",
+            "variant": "plain-wordmark"
+          },
+          {
+            "icon": "vercel",
+            "name": "Vercel"
+          },
+          {
+            "icon": "docker",
+            "name": "Docker"
+          },
+          {
+            "icon": "kubernetes",
+            "name": "Kubernetes",
+            "variant": "plain"
+          },
+          {
+            "icon": "terraform",
+            "name": "Terraform"
+          },
+          {
+            "icon": "githubactions",
+            "name": "GitHub Actions"
+          }
+        ],
+        "label": "Cloud and operations"
+      }
+    ]
+  }
+}

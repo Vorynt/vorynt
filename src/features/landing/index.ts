@@ -1,0 +1,9 @@
+export { Header } from "./components/Header";
+export { Hero } from "./components/Hero";
+export { Offerings } from "./components/Offerings";
+export { Process } from "./components/Process";
+export { Technologies } from "./components/Technologies";
+export { Story } from "./components/Story";
+export { ContactForm } from "./components/ContactForm";
+export { Footer } from "./components/Footer";
+export { JsonLd } from "./components/JsonLd";

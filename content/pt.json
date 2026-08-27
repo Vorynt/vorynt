@@ -1,0 +1,353 @@
+{
+  "chrome": {
+    "closeMenu": "Fechar menu",
+    "localeEn": "EN",
+    "localePt": "PT",
+    "localeSwitchAria": "Selecionar idioma",
+    "mainNavAria": "Principal",
+    "openMenu": "Abrir menu",
+    "replayHeroAnimation": "Repetir animação",
+    "skipToContent": "Ir para o conteúdo"
+  },
+  "contact": {
+    "description": "Sistema novo, troca do atual ou evolução do que já roda. Nome, contexto e o que precisa existir — o resto a gente desenha juntos.",
+    "error": "Não foi possível enviar. Tente de novo em instantes ou escreva direto.",
+    "errors": {
+      "email": "Use um e-mail válido. Exemplo: voce@empresa.com",
+      "message": "Descreva o projeto com um pouco mais de detalhe.",
+      "name": "Informe pelo menos dois caracteres."
+    },
+    "eyebrow": "Próximo passo",
+    "fields": {
+      "company": {
+        "label": "Empresa",
+        "placeholder": "Opcional"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "voce@empresa.com"
+      },
+      "message": {
+        "label": "O que precisa existir",
+        "placeholder": "Contexto, prazo e o que já tentaram."
+      },
+      "name": {
+        "label": "Nome",
+        "placeholder": "Como devemos te chamar"
+      },
+      "projectType": {
+        "label": "Tipo de projeto",
+        "options": [
+          {
+            "label": "Sistema novo",
+            "value": "new"
+          },
+          {
+            "label": "Substituir o atual",
+            "value": "replace"
+          },
+          {
+            "label": "Evoluir o que já existe",
+            "value": "evolve"
+          }
+        ]
+      }
+    },
+    "honeypotAria": "Deixe este campo vazio",
+    "id": "contato",
+    "submit": "Começar a conversa",
+    "submitting": "Enviando…",
+    "success": "Recebemos. Retornamos com o próximo passo.",
+    "title": "Conte o problema. A gente devolve um",
+    "titleAccent": "caminho."
+  },
+  "footer": {
+    "copyright": "© {year} Vorynt. Todos os direitos reservados.",
+    "nav": [
+      {
+        "href": "#ofertas",
+        "label": "Serviços"
+      },
+      {
+        "href": "#processo",
+        "label": "Processo"
+      },
+      {
+        "href": "#contato",
+        "label": "Contato"
+      }
+    ],
+    "tagline": "Software sob medida. Do requisito à produção."
+  },
+  "header": {
+    "cta": {
+      "href": "#contato",
+      "label": "Falar com a Vorynt"
+    },
+    "logo": "Vorynt",
+    "nav": [
+      {
+        "href": "#ofertas",
+        "label": "Serviços"
+      },
+      {
+        "href": "#processo",
+        "label": "Processo"
+      },
+      {
+        "href": "#tecnologias",
+        "label": "Tecnologias"
+      },
+      {
+        "href": "#historia",
+        "label": "História"
+      }
+    ]
+  },
+  "hero": {
+    "description": "A Vorynt projeta, constrói e publica software exclusivo — do levantamento de requisitos à produção. Sem prateleira, sem atalho: qualidade de engenharia em cada entrega.",
+    "eyebrow": "Engenharia de software sob medida",
+    "primaryCta": {
+      "href": "#contato",
+      "label": "Começar um projeto"
+    },
+    "secondaryCta": {
+      "href": "#processo",
+      "label": "Ver o processo"
+    },
+    "title": "Sistemas feitos para o seu",
+    "titleAccent": "negócio."
+  },
+  "jsonLd": {
+    "description": "Estúdio de engenharia que projeta, constrói e publica sistemas sob medida — do primeiro requisito à produção, com qualidade em cada etapa."
+  },
+  "offerings": {
+    "description": "Nada de produto de prateleira. Cada entrega nasce do seu contexto — e sobe para produção com testes, operação e alguém responsável.",
+    "eyebrow": "O que você contrata",
+    "id": "ofertas",
+    "items": [
+      {
+        "description": "Web, APIs, integrações e publicação, ponta a ponta. O sistema segue as suas regras, os seus fluxos e as suas restrições.",
+        "id": "custom",
+        "kicker": "Sob medida",
+        "points": [
+          "Requisitos com critérios de aceite, sem ambiguidade no go-live",
+          "Arquitetura e interfaces alinhadas ao trabalho real da equipe",
+          "Integrações com o que você já usa — o que funciona, permanece"
+        ],
+        "title": "Nascido das suas regras, não de um template"
+      },
+      {
+        "description": "Revisão, testes e observabilidade entram no ritmo do desenvolvimento. O objetivo não é um protótipo: é um sistema estável, usável e pronto para evoluir.",
+        "id": "quality",
+        "kicker": "Padrão",
+        "points": [
+          "Código revisado e ambientes estáveis desde o primeiro incremento",
+          "QA, acessibilidade e endurecimento antes do go-live",
+          "Publicação com pipeline, rollback e handover documentado"
+        ],
+        "title": "Qualidade no ritmo do código, não no final"
+      }
+    ],
+    "title": "Sob medida. Com padrão de",
+    "titleAccent": "produção."
+  },
+  "process": {
+    "deliverableLabel": "Entregável",
+    "description": "Você vê o software crescer: artefatos, previews e decisões por escrito. Relatório sem evidência não conta.",
+    "eyebrow": "Como trabalhamos",
+    "id": "processo",
+    "steps": [
+      {
+        "deliverable": "Mapa de contexto e hipóteses validadas",
+        "description": "Problema de negócio, restrições, prazos e o que sucesso significa de verdade. Perguntas difíceis vêm cedo, enquanto ainda é barato corrigir o rumo.",
+        "number": "01",
+        "phase": "Descobrir",
+        "title": "Briefing e alinhamento"
+      },
+      {
+        "deliverable": "Backlog priorizado com critérios de aceite",
+        "description": "Fluxos, regras, exceções e o que fica de fora. Prioridade explícita: o que entra no primeiro go-live e o que espera o ciclo seguinte.",
+        "number": "02",
+        "phase": "Descobrir",
+        "title": "Levantamento de requisitos"
+      },
+      {
+        "deliverable": "Desenho técnico e ADRs das escolhas-chave",
+        "description": "Limites do sistema, dados, integrações, segurança e operação. Decisões escritas — para o time e para quem herdar o sistema daqui a dois anos.",
+        "number": "03",
+        "phase": "Desenhar",
+        "title": "Arquitetura"
+      },
+      {
+        "deliverable": "Fluxos e UI prontos para implementação",
+        "description": "Interface a serviço do fluxo de trabalho. Prototipamos onde o risco de usabilidade é alto; implementamos direto onde o domínio já está claro.",
+        "number": "04",
+        "phase": "Desenhar",
+        "title": "Design de experiência"
+      },
+      {
+        "deliverable": "Builds contínuos em ambiente de preview",
+        "description": "Incrementos visíveis, código revisado, ambientes estáveis. Progresso é o software rodando no preview — não a porcentagem de um gráfico.",
+        "number": "05",
+        "phase": "Construir",
+        "title": "Desenvolvimento"
+      },
+      {
+        "deliverable": "Plano de testes executado e riscos em aberto",
+        "description": "Testes, acessibilidade, performance e superfície de ataque. Encontrar o defeito aqui custa menos do que encontrá-lo com o cliente usando o sistema.",
+        "number": "06",
+        "phase": "Construir",
+        "title": "QA e endurecimento"
+      },
+      {
+        "deliverable": "Produção no ar, com runbook",
+        "description": "Pipeline, observabilidade, rollback e checklist de go-live. O sistema entra no ar com dono, runbook e um caminho claro se algo falhar.",
+        "number": "07",
+        "phase": "Publicar",
+        "title": "Publicação"
+      },
+      {
+        "deliverable": "Backlog de evolução e acordo de suporte",
+        "description": "Métricas, débito técnico consciente e o próximo ciclo. Software que deixa de ser tocado começa a envelhecer no dia seguinte ao lançamento.",
+        "number": "08",
+        "phase": "Publicar",
+        "title": "Evolução"
+      }
+    ],
+    "title": "Oito etapas. Cada uma com",
+    "titleAccent": "saída clara."
+  },
+  "seo": {
+    "description": "Estúdio de engenharia que projeta, constrói e publica sistemas exclusivos para o seu negócio — do primeiro requisito ao go-live, com qualidade em cada etapa.",
+    "keywords": [
+      "software sob medida",
+      "engenharia de software",
+      "desenvolvimento de sistemas",
+      "sistemas personalizados",
+      "qualidade de software",
+      "Vorynt"
+    ],
+    "ogDescription": "Sistemas feitos para o seu contexto. Do primeiro requisito à produção, com rigor técnico em cada etapa.",
+    "ogTitle": "Vorynt — software sob medida com qualidade de engenharia",
+    "siteName": "Vorynt",
+    "title": "Vorynt — software sob medida, do requisito à produção"
+  },
+  "story": {
+    "eyebrow": "Origem",
+    "id": "historia",
+    "paragraphs": [
+      "A Vorynt surgiu de um engenheiro que ama tecnologia — e, mais do que isso, ama usá-la para desatar problemas reais. Não o problema bonito do slide. O emaranhado do processo, da integração que falha à meia-noite, do sistema que ninguém quer herdar.",
+      "Havia uma oportunidade clara: empresas precisando de sistemas sérios, feitos para o próprio contexto, e pouca paciência para teatro de transformação. A resposta foi um estúdio pequeno, com responsabilidade ponta a ponta.",
+      "O padrão é simples de dizer e difícil de sustentar: cada sistema é exclusivo, e a qualidade não é um extra no final. É o jeito de construir."
+    ],
+    "quote": {
+      "attribution": "Fundador, Vorynt",
+      "text": "Software só justifica o investimento quando entra no ar — e continua de pé."
+    },
+    "title": "Nasceu de um engenheiro que trata software como",
+    "titleAccent": "ofício."
+  },
+  "technologies": {
+    "description": "Escolhemos o que reduz risco no seu domínio — e o que sabemos operar de verdade. Tecnologias a serviço do sistema, não o contrário.",
+    "eyebrow": "Tecnologias",
+    "id": "tecnologias",
+    "title": "Ferramentas que já aguentam",
+    "titleAccent": "produção.",
+    "tracks": [
+      {
+        "direction": "ltr",
+        "items": [
+          {
+            "icon": "typescript",
+            "name": "TypeScript"
+          },
+          {
+            "icon": "react",
+            "name": "React"
+          },
+          {
+            "icon": "nextjs",
+            "name": "Next.js"
+          },
+          {
+            "icon": "tailwindcss",
+            "name": "Tailwind CSS"
+          },
+          {
+            "icon": "react",
+            "name": "React Native"
+          },
+          {
+            "icon": "playwright",
+            "name": "Playwright"
+          }
+        ],
+        "label": "Produto e interface"
+      },
+      {
+        "direction": "rtl",
+        "items": [
+          {
+            "icon": "nodejs",
+            "name": "Node.js"
+          },
+          {
+            "icon": "nestjs",
+            "name": "NestJS"
+          },
+          {
+            "icon": "python",
+            "name": "Python"
+          },
+          {
+            "icon": "postgresql",
+            "name": "PostgreSQL"
+          },
+          {
+            "icon": "redis",
+            "name": "Redis"
+          },
+          {
+            "icon": "graphql",
+            "name": "GraphQL",
+            "variant": "plain"
+          }
+        ],
+        "label": "Backend e dados"
+      },
+      {
+        "direction": "ltr",
+        "items": [
+          {
+            "icon": "amazonwebservices",
+            "name": "AWS",
+            "variant": "plain-wordmark"
+          },
+          {
+            "icon": "vercel",
+            "name": "Vercel"
+          },
+          {
+            "icon": "docker",
+            "name": "Docker"
+          },
+          {
+            "icon": "kubernetes",
+            "name": "Kubernetes",
+            "variant": "plain"
+          },
+          {
+            "icon": "terraform",
+            "name": "Terraform"
+          },
+          {
+            "icon": "githubactions",
+            "name": "GitHub Actions"
+          }
+        ],
+        "label": "Nuvem e operação"
+      }
+    ]
+  }
+}
